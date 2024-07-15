@@ -1,4 +1,4 @@
-# BIXChallenge
+
 CASE
 
 **What steps would you take to solve this problem? Please describe as completely and clearly as possible all the steps that you see as essential for solving the problem.**
