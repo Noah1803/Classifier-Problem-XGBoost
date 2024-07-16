@@ -1,67 +1,59 @@
 
-CASE
+  ##CASE
+  ##Improving Preventing Maintenance of truck's Air Systems.
 
-**What steps would you take to solve this problem? Please describe as completely and clearly as possible all the steps that you see as essential for solving the problem.**
-Passos:
-Compreensão do Problema: Entender os objetivos e restrições do problema.
-Exploração dos Dados: Carregar e explorar os dados para entender sua estrutura e conteúdo.
-Limpeza dos Dados: Tratar valores ausentes e remover inconsistências.
-Análise Exploratória dos Dados (EDA): Visualizar e analisar estatísticas descritivas.
-Redução de Dimensionalidade: Utilizar técnicas como PCA para reduzir o número de variáveis.
-Seleção de Variáveis: Usar métodos como Random Forest Importance ou RFE para selecionar as variáveis mais importantes.
-Modelagem Preditiva: Treinar e testar múltiplos modelos preditivos, como Random Forest, Gradient Boosting e Logistic Regression.
-Avaliação de Modelos: Utilizar métricas como acurácia, precisão, recall, F1-Score e AUC-ROC para avaliar os modelos.
-Interpretação do Modelo: Analisar a importância das variáveis e explicar os resultados.
-Avaliação do Impacto Financeiro: Calcular a economia potencial nos custos de manutenção.
-Otimização de Hiperparâmetros: Utilizar Grid Search ou Random Search para encontrar os melhores parâmetros.
-Implementação em Produção: Desenvolver um pipeline automatizado para ingestão e predição contínuas.
-Monitoramento e Retreinamento: Monitorar a performance do modelo e definir critérios para retreinamento.
-**Which technical data science metric would you use to solve this challenge? Ex: absolute error rmse etc.**
-Métricas Técnicas:
-Acurácia, Precision, Recall, F1-Score
-ROC-AUC (Area Under Curve)
-**Which business metric would you use to solve the challenge?**
-Métricas de Negócio:
-Redução dos custos de manutenção
-Taxa de inspeção e reparo efetivo
-Retorno sobre o Investimento (ROI)
-How do technical metrics relate to the business metrics?
-As métricas técnicas avaliam a precisão e a eficácia dos modelos preditivos, enquanto as métricas de negócio medem o impacto financeiro e operacional das predições. Um modelo técnico com alta acurácia e recall pode levar a uma maior redução de custos e eficiência operacional.
-**What types of analyzes would you like to perform on the customer database?**
-Análise de correlação entre variáveis
-Análise descritiva dos dados 
-What techniques would you use to reduce the dimensionality of the problem?
-PCA (Principal Component Analysis)
-nNúmero de NaNs e por feature importances utilizando XGBoost, que aceita NaNs
-**What techniques would you use to select variables for your predictive model?**
-Featue Importance
-Métodos de correlação
-**What predictive models would you use or test for this problem? Please indicate at least 3.**
-XGBoostClassifier
-Logistic Regression
-**How would you rate which of the trained models is the best?**
-Utilizando métricas como acurácia, F1-Score, ROC-AUC para comparar a performance dos modelos.
-**How would you explain the result of your model? Is it possible to know which variables are most important?**
-Utilizando gráficos de importância das variáveis (Feature Importance Plot)
-Aplicando métodos de explicação de modelos como SHAP (SHapley Additive exPlanations)
-**How would you assess the financial impact of the proposed model?**
-Comparando os custos de manutenção antes e depois da implementação do modelo.
-Calculando o ROI (Retorno sobre o Investimento).
-**What techniques would you use to perform the hyperparameter optimization of the chosen model?**
-Grid Search
-Random Search
-Bayesian Optimization
-**What risks or precautions would you present to the customer before putting this model into production?**
-Overfitting
-Necessidade de manutenção contínua do modelo
-Possibilidade de dados ausentes ou de baixa qualidade afetarem a performance
-**If your predictive model is approved how would you put it into production?**
-Desenvolvendo um pipeline automatizado para ingestão e predição contínuas.
-Integrando o modelo ao sistema de manutenção existente da empresa.
-**If the model is in production how would you monitor it?**
-Implementando sistemas de monitoramento para avaliar a performance do modelo em tempo real.
-Definindo alertas para desvios significativos nas predições.
-**If the model is in production how would you know when to retrain it?**
-Monitorando a acurácia e outras métricas de performance.
-Definindo critérios específicos que indicam a necessidade de retreinamento, como a degradação contínua da acurácia ou mudanças 
+  ## Índice
+1. [Description](#description)
+2. [Pré-requisitos](#pré-requisitos)
+3. [Dataset](#dataset)
+4. [Metodology](#metodology)
+   1. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+   2. [Modelling](#modelling)
+   3. [Training](#training)
+   4. [Avaliation](#avaliation)
+5. [Results](#results)
+6. [Use](#use)
+7. [Contributions](#contributions)
+8. [License](#license)
+9. [References](#references)
+
+#Description
+Project Description: -	If a truck is sent for maintenance and it is defective in this system, $25 will be charged to perform the preventive repair service.
+-	If a truck with defects in the air system is not sent directly for maintenance, the company pays $500 to carry out corrective maintenance of the same, considering the labor, replacement of parts and other possible inconveniences (truck broke down in the middle of the track for example). 
+Goals: Pre-process the data, reduce the dimensionality of DB and maintane the performance of the model. Reduce operational costs by making preventive mantenance in the trucks. Create pipelines to explore the data and understand how we can deal with it. Create a pipeline to train and evaluate the model and save the trined model. Create a pipeline to test the model with unseen data.(In Progress) Create the deployment pipeline.
+
+#Prerequisites
+Ferramentas e Bibliotecas Necessárias: Lista de software, bibliotecas Python, e qualquer outra ferramenta necessária para rodar o projeto.
+Instalação: Instruções para instalar as dependências.
+
+#Dataset
+**Dataset Description:** -	The technical team informed you that all information regarding the air system of the paths will be made available to you, but for bureaucratic reasons regarding company contracts, all columns had to be encoded. 
+-	The technical team also informed you that given the company's recent digitization, some information may be missing from the database sent to you.
+- **Class**: "pos" would be those trucks that had defects in the air system and "neg" would be those trucks that had a defect in any system other than the air system.
+**Pre-processing:** 
+#Metodology
+Exploratory Data Analysis (EDA): Descrição das análises exploratórias realizadas e principais insights.
+Modelagem: Detalhes sobre os modelos de machine learning utilizados, incluindo arquitetura e hiperparâmetros.
+Treinamento: Descrição do processo de treinamento do modelo.
+Avaliação: Métricas e métodos utilizados para avaliar o desempenho do modelo.
+#Results
+**Results Obtained**: Principais resultados e insights obtidos a partir do modelo.
+Visualizações: Gráficos e tabelas que ajudam a entender os resultados.
+#Use
+**Use Instructions**: Passos para rodar o projeto localmente, incluindo exemplos de comandos.
+**Exemplos de Entrada e Saída:** Exemplos de como usar o modelo e o formato esperado de entrada e saída.
+#Contributions
+**How to Contribute**: Guia para contribuir com o projeto.
+**Contact:** Informações de contato para dúvidas ou sugestões.
+#License
+**License:** Informação sobre a licença do projeto.
+#References
+**Referências:** Links para artigos, documentação, e qualquer outra referência utilizada no projeto.
+
+License
+Este projeto está licenciado sob a MIT License.
+
+https://xgboost.readthedocs.io/
+
+
 
