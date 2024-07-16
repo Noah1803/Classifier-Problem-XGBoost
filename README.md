@@ -29,7 +29,7 @@ Goals: Pre-process the data, reduce the dimensionality of DB and maintane the pe
 
 #Prerequisites
 
-**Tools and Libraries:** python version: Python 3.10.10 64-bit; libraries: requirements.txt
+**Tools and Libraries:** python version: Python 3.10.10 64-bit; libraries: 'requirements.txt'
 
 #Dataset
 
@@ -48,15 +48,15 @@ Goals: Pre-process the data, reduce the dimensionality of DB and maintane the pe
 
  -##Modelagem: Detalhes sobre os modelos de machine learning utilizados, incluindo arquitetura e hiperparâmetros.
 
- -##Treinamento: Descrição do processo de treinamento do modelo.
+ -##Training: Descrição do processo de treinamento do modelo.
 
- -##Avaliação: Métricas e métodos utilizados para avaliar o desempenho do modelo.
+ -##Avaliation: Métricas e métodos utilizados para avaliar o desempenho do modelo.
 
 #Results
 
 **Results Obtained**: Principais resultados e insights obtidos a partir do modelo.
 
-Visualizações: Gráficos e tabelas que ajudam a entender os resultados.
+**Visualizações:** Gráficos e tabelas que ajudam a entender os resultados.
 
 #Use
 
